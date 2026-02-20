@@ -1,6 +1,6 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
-import picService from "../services/picService";
+import picService from "../../services/picService";
 
 function PicDetail() {
   const { id } = useParams();

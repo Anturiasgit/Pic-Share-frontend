@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import picService from "../services/picService";
+import picService from "../../services/picService";
 import Card from "../../components/Card/Card";
 
 function Home() {

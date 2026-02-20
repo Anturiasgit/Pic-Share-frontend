@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import picService from "../services/picService";
+import Card from "../../components/Card/Card";
 
 function Home() {
   const [pics, setPics] = useState([]);
@@ -14,12 +14,7 @@ function Home() {
       <h1>Tous les souvenirs</h1>
 
       {pics.map(pic => (
-        <div key={pic.id}>
-          <Link to={`/pics/${pic.id}`}>
-            <img src={pic.url} width="200" />
-          </Link>
-          <p>{pic.title}</p>
-        </div>
+          <Card id={pic.id} cover={pic.url} title={pic.title}/>
       ))}
     </div>
   );

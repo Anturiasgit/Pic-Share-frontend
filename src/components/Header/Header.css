@@ -1,5 +1,5 @@
 header {
-    border: 2px solid black;
+    border-bottom: 2px solid black;
 }
 
 .header {
@@ -7,9 +7,21 @@ header {
 }
 
 .logo {
-    width: 10%; 
+    width: 10%;
 }
 
 .logo img {
     object-fit: contain;
+}
+
+.titles {
+    width: 70%;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+}
+
+.buttons {
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
 }

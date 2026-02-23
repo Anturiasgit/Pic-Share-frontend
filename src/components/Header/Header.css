@@ -1,5 +1,6 @@
 header {
     border-bottom: 2px solid black;
+    background-color: rgba(253, 247, 221);
 }
 
 .header {
@@ -8,6 +9,7 @@ header {
 
 .logo {
     width: 10%;
+    margin-left: 1rem;
 }
 
 .logo img {
@@ -18,10 +20,37 @@ header {
     width: 70%;
     text-align: center;
     font-family: "Playfair Display", serif;
+    font-style: italic;
+    color: rgba(56, 84, 56);
+}
+
+.titles .title {
+    letter-spacing: 0.2em;
+    word-spacing: 0.5em;
+}
+
+.titles .subtitle {
+    letter-spacing: 0.150em;
+    word-spacing: 0.5em;
 }
 
 .buttons {
     width: 20%;
     display: flex;
     justify-content: space-evenly;
+    height: 100%;
+    margin-top: 3rem;
+}
+
+.buttons button {
+    font-family: "Playfair Display", serif;
+    padding-block: 0.5rem;
+    padding-inline: 1rem;
+    border-radius: 0.9rem;
+    font-size: 0.89rem;
+    border: 0.150rem solid black;
+    background-color: beige;
+    border-color: rgba(56, 84, 56);
+    color: rgba(56, 84, 56);
+    font-weight: 600;
 }

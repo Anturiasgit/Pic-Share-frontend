@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import picService from "../../services/picService";
 import Card from "../../components/Card/Card";
+import './Home.css'
 
 function Home() {
   const [pics, setPics] = useState([]);
@@ -11,11 +12,18 @@ function Home() {
 
   return (
     <div>
-      <h1>Tous les souvenirs</h1>
+      <section className="all-section">
+        <div className="title">
+        <h2 className="text-title">Nos derniers souvenirs</h2>
+        </div>
+      </section>
 
+      <section className="pics-section">
       {pics.map(pic => (
           <Card id={pic.id} cover={pic.url} title={pic.title}/>
       ))}
+      </section>
+    
     </div>
   );
 }

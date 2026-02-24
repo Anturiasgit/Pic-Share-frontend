@@ -1,3 +1,33 @@
+/* =========================
+   VARIABLES (Design System)
+========================= */
+
+:root {
+    --color-primary: #385438;
+    /* vert principal */
+    --color-bg-header: #fdf7dd;
+    /* fond header */
+    --color-bg-main: rgb(255, 252, 233);
+    /* fond main content */
+    --color-bg-button: #f5f5dc;
+    /* beige */
+    --color-border: var(--color-primary);
+
+    --font-main: "Playfair Display", serif;
+
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 3rem;
+
+    --radius-md: 0.9rem;
+}
+
+
+
 body {
     margin: 0;
+    font-family: var(--font-main);
+    font-style: italic;
+    color: var(--color-primary);
 }
+

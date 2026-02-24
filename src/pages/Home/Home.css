@@ -1,0 +1,35 @@
+body {
+    background-color: var(--color-bg-main); 
+       background-image:
+        repeating-linear-gradient(
+            90deg,
+            rgba(0,0,0,0.04) 1px,
+            rgba(0,0,0,0.04) 3px,
+            transparent 1px,
+            transparent 6px
+        );
+}
+
+
+.title .text-title {
+    margin-left: 10rem;
+    text-shadow: 0 1px 1px var(--color-primary);
+    letter-spacing: 0.15em;
+    word-spacing: 0.2em;
+    font-weight: 500;
+    margin-top: 2rem;
+} 
+
+
+.title .text-title::before {
+    content: "";
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    margin-right: 15px;
+    margin-top: 3px;
+    background-image: url("favicon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}

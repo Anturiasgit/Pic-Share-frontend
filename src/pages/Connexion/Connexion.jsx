@@ -6,7 +6,7 @@ function Connexion() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
-    const handleSubmit = async (e) => {
+    const handleConnexion = async (e) => {
         e.preventDefault(); // empêche le rechargement
 
         const response = await fetch("http://localhost:8080/api/login", {
@@ -26,7 +26,7 @@ function Connexion() {
 
     return (
         <section className="connexion-section">
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleConnexion}>
                 <input 
                     type="email"
                     placeholder="Email"

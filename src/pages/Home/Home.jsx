@@ -12,13 +12,13 @@ function Home() {
 
   return (
     <div>
-      <section className="all-section">
+      <section className="alltitle-section">
         <div className="title">
         <h2 className="text-title">Nos derniers souvenirs</h2>
         </div>
       </section>
 
-      <section className="pics-section">
+      <section className="allpics-section">
       {pics.map(pic => (
           <Card id={pic.id} cover={pic.url} title={pic.title}/>
       ))}

@@ -1,0 +1,45 @@
+.connexion-section {
+    margin-top: 3.5rem;
+}
+
+.connexion-section .connexion-title {
+    text-shadow: 0 1px 1px var(--color-primary);
+    letter-spacing: 0.15em;
+    word-spacing: 0.2em;
+    font-weight: 500;
+    margin: 2rem 0 0.5rem 34rem;
+}
+
+.connexion-form {
+    margin-left: 24.5rem;
+    display: flex; 
+    flex-direction: column;
+    width: 30rem;
+    height: 17.5rem;
+    justify-content: space-evenly;
+}
+
+.connexion-form input {
+    padding: 1rem 0.5rem;
+    border: none;
+    font-family: var(--font-main);
+    background-color: var(--color-bg-button);
+    border: 1.5px solid var(--color-primary);
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: var(--color-primary);
+    transition: all 0.3s ease;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(94,124,99,0.2);
+}
+
+.connexion-button {
+    margin-left: 7rem;
+    width: 50%;
+}

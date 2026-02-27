@@ -26,7 +26,8 @@ function Connexion() {
 
     return (
         <section className="connexion-section">
-            <form onSubmit={handleConnexion}>
+            <h2 className="connexion-title">Connexion</h2>
+            <form className="connexion-form" onSubmit={handleConnexion}>
                 <input 
                     type="email"
                     placeholder="Email"
@@ -41,7 +42,7 @@ function Connexion() {
                     onChange={(e) => setPassword(e.target.value)}
                 />
 
-                <button type="submit">Se connecter</button>
+                <button type="submit" className="connexion-button">Se connecter</button>
             </form>
         </section>
     );

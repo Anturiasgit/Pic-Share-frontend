@@ -1,46 +1,51 @@
 import { useState } from "react";
+import './PicCreate.css';
 
 function PicCreate() {
-  const [title, setTitle] = useState("");
   const [image, setImage] = useState(null);
+  const [description, setDescription] = useState("");
 
-  const handleSubmit = (e) => {
+  const submitPic = (e) => {
     e.preventDefault();
 
-    if (!title || !image) {
+    if (!image || !description) {
       alert("Veuillez remplir tous les champs");
       return;
     }
-
   };
 
   return (
-    <div className="pic-create">
-      <h1>Créer un souvenir</h1>
-
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label>Titre :</label>
-          <input
-            type="text"
-            value={title}
-            onChange={(e) => setTitle(e.target.value)}
-            placeholder="Nom du souvenir"
-          />
+    <section className="creation-section">
+      <div className="title">
+        <h2 className="text-title">Créer un nouveau souvenir</h2>
+      </div>
+      
+      <form onSubmit={submitPic}>
+        <div className="image">
+      <label>Image</label>
+        <input
+          type="file"
+          accept="image/*"
+          onChange={(e) => setImage(e.target.files[0])}
+        />
         </div>
-
-        <div>
-          <label>Image :</label>
-          <input
-            type="file"
-            accept="image/*"
-            onChange={(e) => setImage(e.target.files[0])}
-          />
+       
+        <div className="description"> 
+         <label>Description</label>
+        <textarea
+          type="text"
+          onChange={(e) => setDescription(e.target.value)}
+          placeholder="Décrivez votre souvenir
+Exemple : lieu, anecdote..."
+          maxLength={300}
+          rows={6}
+        />
         </div>
+      
 
         <button type="submit">Publier</button>
       </form>
-    </div>
+    </section>
   );
 }
 

@@ -13,7 +13,7 @@ function MyPics() {
   return (
     <div>
       <section className="alltitle-section">
-        <div className="title">
+         <div className="title">
         <h2 className="text-title">Mes souvenirs</h2>
         </div>
       </section>

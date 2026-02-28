@@ -51,14 +51,6 @@ button:active {
     transform: translateY(4px);
 }
 
- form {
-    margin-left: 24.5rem;
-    display: flex; 
-    flex-direction: column;
-    width: 30rem;
-    height: 17.5rem;
-    justify-content: space-evenly;
-}
 
 form input {
     padding: 1rem 0.5rem;
@@ -89,4 +81,27 @@ label {
     margin-top: 0.5rem;
     margin-bottom: -0.5rem;
     font-weight: 600;
+}
+
+.title .text-title {
+    margin-left: 10rem;
+    text-shadow: 0 1px 1px var(--color-primary);
+    letter-spacing: 0.15em;
+    word-spacing: 0.2em;
+    font-weight: 500;
+    margin-top: 2rem;
+} 
+
+
+.title .text-title::before {
+    content: "";
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    margin-right: 15px;
+    margin-top: 3px;
+    background-image: url("favicon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
 }

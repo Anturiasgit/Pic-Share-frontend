@@ -19,29 +19,28 @@ function PicCreate() {
       <div className="title">
         <h2 className="text-title">Créer un nouveau souvenir</h2>
       </div>
-      
+
       <form onSubmit={submitPic}>
         <div className="image">
-      <label>Image</label>
-        <input
-          type="file"
-          accept="image/*"
-          onChange={(e) => setImage(e.target.files[0])}
-        />
+          <label>Image</label>
+          <input
+            type="file"
+            accept="image/*"
+            onChange={(e) => setImage(e.target.files[0])}
+          />
         </div>
-       
-        <div className="description"> 
-         <label>Description</label>
-        <textarea
-          type="text"
-          onChange={(e) => setDescription(e.target.value)}
-          placeholder="Décrivez votre souvenir
+
+        <div className="description">
+          <label>Description</label>
+          <textarea
+            type="text"
+            onChange={(e) => setDescription(e.target.value)}
+            placeholder="Décrivez votre souvenir
 Exemple : lieu, anecdote..."
-          maxLength={300}
-          rows={6}
-        />
+            maxLength={300}
+            rows={8}
+          />
         </div>
-      
 
         <button type="submit">Publier</button>
       </form>

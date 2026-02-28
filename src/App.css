@@ -52,7 +52,7 @@ button:active {
 }
 
 
-form input {
+form input, textarea {
     padding: 1rem 0.5rem;
     border: none;
     font-family: var(--font-main);

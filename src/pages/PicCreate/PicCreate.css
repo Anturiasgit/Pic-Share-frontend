@@ -1,11 +1,46 @@
 .creation-section .title {
-    margin-left: 3rem;
+    margin: 2.5rem 0 0 3rem;
 }
 
 .creation-section form {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin-top: -2.5rem;
+    margin-top: -1.5rem;
     margin-left: 25rem;
 }
+
+.image, .description {
+    display: flex;
+    justify-content: space-between;
+    width: 30rem; 
+    margin-left: -1rem;
+}
+
+.image label {
+    margin-top: 0.85rem;
+    font-size: 1.05rem;
+}
+
+.description label {
+    margin-left: -2.25rem;
+    margin-top: 1rem;
+}
+
+.description textarea {
+    width: 82.5%;
+    resize: none;
+    color: var(--color-primary);
+}
+
+.description textarea::placeholder {
+    color: var(--color-primary);
+    font-weight: 500;
+}
+
+.creation-section button {
+    margin-left: 8rem;
+    margin-top: 0;
+}
+
+

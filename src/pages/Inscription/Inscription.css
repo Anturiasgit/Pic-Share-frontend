@@ -1,0 +1,21 @@
+.inscription-section .inscription-title {
+    margin-left: 35rem;
+}
+
+.inscription-section .inscription-title {
+    text-shadow: 0 1px 1px var(--color-primary);
+    letter-spacing: 0.15em;
+    word-spacing: 0.2em;
+    font-weight: 500;
+    margin: 2rem 0 0.5rem 34rem;
+}
+
+form {
+    justify-content: space-between;
+    height: 32rem;
+    width: 29rem;
+}
+
+button {
+    margin-top: 1rem;
+}

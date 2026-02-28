@@ -50,3 +50,43 @@ button:active {
     color: var(--color-bg-button);
     transform: translateY(4px);
 }
+
+ form {
+    margin-left: 24.5rem;
+    display: flex; 
+    flex-direction: column;
+    width: 30rem;
+    height: 17.5rem;
+    justify-content: space-evenly;
+}
+
+form input {
+    padding: 1rem 0.5rem;
+    border: none;
+    font-family: var(--font-main);
+    background-color: var(--color-bg-button);
+    border: 1.5px solid var(--color-primary);
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: var(--color-primary);
+    transition: all 0.3s ease;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(94,124,99,0.2);
+}
+
+button[type="submit"] {
+    margin-left: 7rem;
+    width: 50%;
+}
+
+label {
+    margin-top: 0.5rem;
+    margin-bottom: -0.5rem;
+    font-weight: 600;
+}

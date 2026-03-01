@@ -1,8 +1,8 @@
-.creation-section .title {
+.creation-section .title, .edition-section .title {
     margin: 2.5rem 0 0 3rem;
 }
 
-.creation-section form {
+.creation-section form, .edition-section form {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;

@@ -12,13 +12,13 @@ function MyPics() {
 
   return (
     <div>
-      <section className="alltitle-section">
+      <section className="mypicstitle-section">
          <div className="title">
         <h2 className="text-title">Mes souvenirs</h2>
         </div>
       </section>
 
-      <section className="allmypics-section">
+      <section className="mypicscard-section">
       {pics.map(pic => (
           <Card id={pic.id} cover={pic.url} title={pic.title}/>
       ))}

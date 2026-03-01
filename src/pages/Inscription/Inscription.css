@@ -1,21 +1,29 @@
 .inscription-section .inscription-title {
-    margin-left: 35rem;
-}
-
-.inscription-section .inscription-title {
     text-shadow: 0 1px 1px var(--color-primary);
     letter-spacing: 0.15em;
     word-spacing: 0.2em;
-    font-weight: 500;
     margin: 2rem 0 0.5rem 34rem;
 }
 
-form {
-    justify-content: space-between;
-    height: 32rem;
-    width: 29rem;
+.inscription-title .title {
+    font-weight: normal;
 }
 
-button {
-    margin-top: 1rem;
+.inscription-section form {
+    display: flex;
+    flex-direction: column;
+    height: 40rem;
+    justify-content: space-evenly;
+    margin-top: -1rem;
+    margin-left: 23.5rem;
+    width: 30rem;
+}
+
+.inscription-section label {
+    margin-bottom: -2rem;
+}
+
+.inscription-section button {
+    width: 50%;
+    margin-left: 7rem;
 }

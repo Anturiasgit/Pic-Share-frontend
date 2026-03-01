@@ -10,3 +10,15 @@
     margin: 2rem 0 0.5rem 34rem;
 }
 
+.connexion-form {
+    display: flex;
+    flex-direction: column;
+    height: 20rem;
+    justify-content: space-evenly;
+    margin-left: 24rem;
+}
+
+.connexion-form button {
+    width: 50%;
+    margin-left: 7rem;
+}

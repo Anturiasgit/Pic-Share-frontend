@@ -27,6 +27,15 @@ body {
     font-family: var(--font-main);
     font-style: italic;
     color: var(--color-primary);
+     background-color: var(--color-bg-main); 
+       background-image:
+        repeating-linear-gradient(
+            90deg,
+            rgba(0,0,0,0.04) 1px,
+            rgba(0,0,0,0.04) 3px,
+            transparent 1px,
+            transparent 6px
+        );
 }
 
 button {
@@ -51,7 +60,6 @@ button:active {
     transform: translateY(4px);
 }
 
-
 form input, textarea {
     padding: 1rem 0.5rem;
     border: none;
@@ -72,26 +80,9 @@ form input, textarea {
   box-shadow: 0 0 0 3px rgba(94,124,99,0.2);
 }
 
-button[type="submit"] {
-    margin-left: 7rem;
-    width: 50%;
-}
-
 label {
-    margin-top: 0.5rem;
-    margin-bottom: -0.5rem;
     font-weight: 600;
 }
-
-.title .text-title {
-    margin-left: 10rem;
-    text-shadow: 0 1px 1px var(--color-primary);
-    letter-spacing: 0.15em;
-    word-spacing: 0.2em;
-    font-weight: 500;
-    margin-top: 2rem;
-} 
-
 
 .title .text-title::before {
     content: "";
